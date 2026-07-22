@@ -26,3 +26,7 @@ jobs:
         run: |
           echo "Secret set: ${{ secrets.MY_API_KEY != '' }}"
           echo "Try print : $MY_SECRET"
+          echo "Workflow : $WORKSHOP_NAME"
+          echo "Job      : $JOB_ENV"
+          echo "Step     : $STEP_VAR"
+          echo "Default  : $GITHUB_ACTOR"
