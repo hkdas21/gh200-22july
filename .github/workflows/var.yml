@@ -7,6 +7,7 @@ env:                                    # Workflow-level
 
 jobs:
   setup:
+    runs-on: ubuntu-latest
     env:
       JOB_ENV: "Setup Phase"            # Job-level
     steps:
