@@ -1,0 +1,16 @@
+name: timeout
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-slim
+    timeout-minutes: 2
+    steps:
+      - name: step1
+        timeout-minutes: 1
+        run: |
+          sleep 90
+
+      - name: verify
+        run: echo "next step"
