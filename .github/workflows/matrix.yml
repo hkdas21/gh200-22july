@@ -26,4 +26,4 @@ jobs:
         - name: 🧪 Run Tests
           run: |
             echo "Testing on ${{ matrix.os }} with Python ${{ matrix.python-version }}"
-          python --version
+            python --version
