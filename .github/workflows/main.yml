@@ -15,15 +15,7 @@ jobs:
       - name: List files
         run: ls -la
 
-      - name: Install Third party tool
+      - name: Run Script
         run: |
-          sudo apt-get install -y figlet
-          echo "figlet ready"
-
-      - name: Generate ASCII Artwork
-        run: |
-          figlet "GH-200"
-          echo "---------------------"
-          figlet -f digital "GITHUB ACTIONS"
-          echo "---------------------"
-          figlet -f slant "Day1"
+          chmod +x scripts/greet.sh
+          ./scripts/greet.sh
