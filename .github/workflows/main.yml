@@ -14,3 +14,18 @@ jobs:
 
       - name: List files
         run: ls -la
+
+      - name: Install Third party tool
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y figlet
+          figlet --version
+          echo "figlet ready"
+
+      - name: Generate ASCII Artwork
+        run: |
+          figlet "GH-200"
+          echo "---------------------"
+          figlet -f digital "GITHUB ACTIONS"
+          echo "---------------------"
+          figlet -f slant "Day1"
