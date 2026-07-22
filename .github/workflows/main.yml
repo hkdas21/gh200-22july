@@ -10,7 +10,7 @@ jobs:
         run: echo "Hello from GH-200 Session!!!"
 
       - name: Checkout
-        uses: actions/checkout@6
+        uses: actions/checkout@v6
 
       - name: List files
         run: ls -la
