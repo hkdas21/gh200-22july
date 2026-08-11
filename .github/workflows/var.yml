@@ -1,6 +1,5 @@
 name: var
 on: push
-    workflow_dispatch
 
 env:                                    # Workflow-level
   WORKSHOP_NAME: "GH-200 CoHack"
